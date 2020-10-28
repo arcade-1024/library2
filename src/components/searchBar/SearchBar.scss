@@ -1,0 +1,33 @@
+.searchbar {
+	margin: 30px auto;
+	height: 40px;
+	width: 300px;
+	position: relative;
+	&-icon {
+		position: absolute;
+		top: 48%;
+		left: 10px;
+		transform: translate(0, -50%);
+		color: #999;
+	}
+	&-input {
+		height: 100%;
+		width: 100%;
+		padding: 5px 35px;
+		font-size: 1.2rem;
+		font-family: "Montserrat", sans-serif;
+		letter-spacing: 1px;
+		border-radius: 20px;
+		outline: none;
+		border: 1px solid rgba(136, 136, 136, 0.24);
+		box-shadow: 0 5px 8px rgba(153, 153, 153, 0.479);
+	}
+}
+@media (min-width: 1024px) {
+	.searchbar {
+		margin: 30px auto;
+		height: 45px;
+		width: 550px;
+		position: relative;
+	}
+}

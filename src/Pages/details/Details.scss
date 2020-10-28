@@ -1,0 +1,57 @@
+$green: #2bff88;
+$purple: #fa8bff;
+$purple-grad: #982aff;
+$blue: #8ec5fc;
+.Details {
+	&-indicator {
+		display: flex;
+		justify-content: space-around;
+		position: absolute;
+		right: 5%;
+		top: 2%;
+		width: 100px;
+		height: 10px;
+		&-dots {
+			width: 10px;
+			height: 100%;
+			background-color: $green;
+			border-radius: 11px;
+			&-3 {
+				width: 20px;
+			}
+		}
+	}
+	&-title {
+		font-weight: 400;
+		text-align: left;
+		padding: 0 10px;
+		margin-top: 25%;
+	}
+	&-login {
+		margin-top: 20px;
+		font-weight: 300;
+		span {
+			font-weight: 500;
+			color: $green;
+			cursor: pointer;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.Details {
+		&-indicator {
+			display: flex;
+			justify-content: space-around;
+			position: absolute;
+			right: 15%;
+			top: 2%;
+		}
+		&-title {
+			font-weight: 400;
+			text-align: center;
+			padding: 0 10px;
+			margin: 4% 0;
+		}
+	}
+}

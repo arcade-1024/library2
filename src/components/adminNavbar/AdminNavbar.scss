@@ -1,0 +1,53 @@
+.admin-navbar {
+
+	&-greet {
+		text-align: left;
+		font-size: 0.8rem;
+		color: rgb(175, 174, 174);
+	}
+	&-navigation {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		&-header {
+			text-align: left;
+		}
+		&-row {
+			display: flex;
+			&-btn {
+				height: 30px;
+				width: 30px;
+				border-radius: 30px;
+				background-color: rgb(216, 215, 215);
+				box-shadow: 0 3px 10px #999;
+				margin-left: 20px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: all 0.3s;
+				&:hover {
+					transform: translateY(-5px) scale(1.1);
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.admin-navbar {
+
+		&-greet {
+			text-align: left;
+			font-size: 1rem;
+		}
+		&-navigation {
+			&-row {
+				&-btn {
+					height: 40px;
+					width: 40px;
+				}
+			}
+		}
+	}
+}

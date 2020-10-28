@@ -1,0 +1,27 @@
+.discover {
+	&-title {
+		text-align: left;
+		font-weight: 400;
+		padding: 10px 3%;
+	}
+	&-grid {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 10px 3%;
+	}
+}
+@media (min-width: 1024px) {
+	.discover {
+		&-title {
+			text-align: left;
+			font-weight: 400;
+			padding: 10px 5%;
+		}
+		&-grid {
+      padding: 10px 5%;
+      justify-content: start;
+		}
+	}
+}

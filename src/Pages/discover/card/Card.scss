@@ -1,0 +1,30 @@
+.card {
+	margin-right: 30px;
+	margin-top: 30px;
+	height: 200px;
+	width: 300px;
+	border-radius: 10px;
+	transition: all 0.3s;
+	box-shadow: 0 5px 10px rgba(73, 73, 73, 0.829);
+	&:hover {
+		transform: translateY(-10px);
+		box-shadow: 0 8px 10px rgba(73, 73, 73, 0.5);
+	}
+	&-title {
+		padding: 10px 20px;
+		text-align: left;
+		font-size: 1.2rem;
+		font-weight: 600;
+		letter-spacing: 1px;
+		color: #fff;
+	}
+}
+@media (min-width: 1024px) {
+	.card {
+		margin-right: 30px;
+		margin-top: 30px;
+		height: 200px;
+		width: 200px;
+		border-radius: 10px;
+	}
+}
